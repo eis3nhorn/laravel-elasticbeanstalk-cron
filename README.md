@@ -46,13 +46,13 @@ Now only one instance, the earliest launched, will have the scheduler inserted i
 Require this package  
 
 ```php
-composer require "foxxmd/laravel-elasticbeanstalk-cron"
+composer require "eis3nhorn/laravel-elasticbeanstalk-cron"
 ```
 
 After adding the package, add the ServiceProvider to the providers array in `config/app.php`
 
 ```php
-\FoxxMD\LaravelElasticBeanstalkCron\ElasticBeanstalkCronProvider::class
+\eis3nhorn\LaravelElasticBeanstalkCron\ElasticBeanstalkCronProvider::class
 ```
 
 Then, publish the **.ebextensions** folder and configuration file.
@@ -78,4 +78,4 @@ Make a PR for some extra functionality and I will happily accept it :)
 
 ## License
 
-This package is licensed under the [MIT license](https://github.com/FoxxMD/laravel-elasticbeanstalk-cron/blob/master/LICENSE.txt).
+This package is licensed under the [MIT license](https://github.com/eis3nhorn/laravel-elasticbeanstalk-cron/blob/master/LICENSE.txt).

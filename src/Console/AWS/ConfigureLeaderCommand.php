@@ -1,6 +1,6 @@
 <?php
 
-namespace FoxxMD\LaravelElasticBeanstalkCron\Console\AWS;
+namespace eis3nhorn\LaravelElasticBeanstalkCron\Console\AWS;
 
 use Aws\Ec2\Ec2Client;
 use Functional as F;

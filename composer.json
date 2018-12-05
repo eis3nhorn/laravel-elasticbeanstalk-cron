@@ -1,12 +1,12 @@
 {
-    "name": "foxxmd/laravel-elasticbeanstalk-cron",
+    "name": "eis3nhorn/laravel-elasticbeanstalk-cron",
     "description": "Ensure only one Laravel instance is running CRON jobs in an EB environment",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
-            "name": "FoxxMD",
-            "email": "FoxxMD@users.noreply.github.com"
+            "name": "eis3nhorn",
+            "email": "eis3nhorn@users.noreply.github.com"
         }
     ],
     "require": {
@@ -17,13 +17,13 @@
     },
     "autoload": {
         "psr-4": {
-            "FoxxMD\\LaravelElasticBeanstalkCron\\": "src/"
+            "eis3nhorn\\LaravelElasticBeanstalkCron\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "FoxxMD\\LaravelElasticBeanstalkCron\\ElasticBeanstalkCronProvider"
+                "eis3nhorn\\LaravelElasticBeanstalkCron\\ElasticBeanstalkCronProvider"
             ]
         }
     }

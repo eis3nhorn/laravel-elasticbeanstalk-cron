@@ -1,6 +1,6 @@
 <?php
 
-namespace FoxxMD\LaravelElasticBeanstalkCron\Console\System;
+namespace eis3nhorn\LaravelElasticBeanstalkCron\Console\System;
 
 use Illuminate\Console\Command;
 use Illuminate\Contracts\Config\Repository as ConfigRepository;

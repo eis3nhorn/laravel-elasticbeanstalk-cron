@@ -1,12 +1,12 @@
 <?php
 
 
-namespace FoxxMD\LaravelElasticBeanstalkCron;
+namespace eis3nhorn\LaravelElasticBeanstalkCron;
 
 
-use FoxxMD\LaravelElasticBeanstalkCron\Console\AWS\ConfigureLeaderCommand;
-use FoxxMD\LaravelElasticBeanstalkCron\Console\System\SetupLeaderSelectionCRONCommand;
-use FoxxMD\LaravelElasticBeanstalkCron\Console\System\SetupSchedulerCommand;
+use eis3nhorn\LaravelElasticBeanstalkCron\Console\AWS\ConfigureLeaderCommand;
+use eis3nhorn\LaravelElasticBeanstalkCron\Console\System\SetupLeaderSelectionCRONCommand;
+use eis3nhorn\LaravelElasticBeanstalkCron\Console\System\SetupSchedulerCommand;
 use Illuminate\Support\ServiceProvider;
 
 class ElasticBeanstalkCronProvider extends ServiceProvider
