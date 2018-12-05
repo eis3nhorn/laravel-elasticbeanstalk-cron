@@ -41,17 +41,17 @@ class ConfigureLeaderCommand extends Command
 
         $client = new Ec2Client([
             'credentials' => [
-                'key' => $this->config->get('elasticbeanstalkcron.key', ''),
-                'secret' => $this->config->get('elasticbeanstalkcron.secret', ''),
+                'key' => getenv('AWS_ACCESS_KEY_ID'),
+                'secret' => getenv('AWS_SECRET_ACCESS_KEY'),
             ],
-            'region'  => $this->config->get('elasticbeanstalkcron.region', 'us-east-1'),
+            'region'  => getenv('AWS_REGION'),
             'version' => 'latest',
         ]);
 
         $this->info('Initializing Leader Selection...');
 
         // Only do cron setup if environment is configured to use it (This way we don't accidentally run on workers)
-        if ( (boolean)$this->config->get('elasticbeanstalkcron.enable', false) ) {
+        if ( getenv('USE_CRON') == 'true' ) {
             //check to see if we are in an instance
             $ch = curl_init('http://169.254.169.254/latest/meta-data/instance-id'); //magic ip from AWS
             curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 1);
