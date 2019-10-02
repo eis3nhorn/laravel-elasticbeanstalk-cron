@@ -1,5 +1,5 @@
-# Lumen 5.7.* FORK Task Scheduler with Elastic Beanstalk
-*** This Fork uses getenv to get vars (like USE_CRON) defined in Elastic Beanstalk Environment instead of using config to read them as it seems to fail on Elastic Beanstalk as of December 4 2018.
+# Lumen 6.0.* FORK Task Scheduler with Elastic Beanstalk
+*** This Fork uses getenv to get vars (like USE_CRON) defined in Elastic Beanstalk Environment instead of using config to read them as it seems to fail on Elastic Beanstalk as of December 4 2018, it has also been updated to work with 6.0 branch
 *Ensure one instance in an Elastic Beanstalk environment is running Laravel's Scheduler*
 
 A common [problem](https://stackoverflow.com/questions/14077095/aws-elastic-beanstalk-running-a-cronjob) [many](http://culttt.com/2016/02/08/setting-up-and-using-cron-jobs-with-laravel-and-aws-elastic-beanstalk/) [people](https://medium.com/@joelennon/running-cron-jobs-on-amazon-web-services-aws-elastic-beanstalk-a41d91d1c571#.i53d41sci) have encountered with Amazon's [Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/) is maintaining a single instance in an environment that runs Laravel's Task Scheduler. Difficulties arise because auto-scaling does not guarantee any instance is run indefinitely and there are no "master-slave" relationships within an environment to differentiate one instance from the rest.
