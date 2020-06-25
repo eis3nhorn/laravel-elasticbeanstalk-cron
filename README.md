@@ -1,4 +1,4 @@
-# Lumen 6.0.* FORK Task Scheduler with Elastic Beanstalk
+# Lumen 6.0.* and 7* FORK Task Scheduler with Elastic Beanstalk
 *** This Fork uses getenv to get vars (like USE_CRON) defined in Elastic Beanstalk Environment instead of using config to read them as it seems to fail on Elastic Beanstalk as of December 4 2018, it has also been updated to work with 6.0 branch
 *Ensure one instance in an Elastic Beanstalk environment is running Laravel's Scheduler*
 
